@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="296" viewBox="0 0 1120 296" role="img" aria-labelledby="title description">
+  <title id="title">Henri Ardianto</title>
+  <desc id="description">IT Support, Network &amp; Server Infrastructure. A stylized network on a dark background.</desc>
+
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0a131e"/>
+      <stop offset="1" stop-color="#112a33"/>
+    </linearGradient>
+    <radialGradient id="network-light">
+      <stop offset="0" stop-color="#246664" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#246664" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#75dbca" stroke-opacity=".12"/>
+    </pattern>
+    <linearGradient id="grid-fade">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".4" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".48"/>
+    </linearGradient>
+    <mask id="grid-mask">
+      <rect x="626" width="494" height="296" fill="url(#grid-fade)"/>
+    </mask>
+    <clipPath id="banner-clip">
+      <rect width="1120" height="296" rx="18"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#banner-clip)">
+    <rect width="1120" height="296" fill="url(#background)"/>
+    <ellipse cx="914" cy="151" rx="283" ry="189" fill="url(#network-light)"/>
+    <rect x="626" width="494" height="296" fill="url(#grid)" mask="url(#grid-mask)"/>
+
+    <g fill="none" stroke="#3e777c" stroke-width="1.5" opacity=".44">
+      <path d="M724 84h78l36 35M726 218h73l42-42M973 148h113"/>
+      <path d="M806 70h38l33 33m51 98 26 27h64"/>
+      <path d="M699 148h44m299-75h44m-44 150h44" stroke-dasharray="2 6"/>
+    </g>
+
+    <g fill="none" stroke="#61b8ad" stroke-opacity=".8" stroke-width="2">
+      <path d="M753 148h132"/>
+      <path d="M915 148h36l52-72h40"/>
+      <path d="M915 148h90"/>
+      <path d="M915 148h36l52 72h40"/>
+    </g>
+
+    <g fill="#122d36" stroke="#78d4c4" stroke-width="2">
+      <circle cx="753" cy="148" r="6"/>
+      <circle cx="1043" cy="76" r="8"/>
+      <circle cx="1005" cy="148" r="8"/>
+      <circle cx="1043" cy="220" r="8"/>
+    </g>
+    <g fill="#62a8a5">
+      <circle cx="724" cy="84" r="3"/>
+      <circle cx="726" cy="218" r="3"/>
+      <circle cx="1018" cy="228" r="3"/>
+    </g>
+
+    <circle cx="900" cy="148" r="41" fill="none" stroke="#62cbbb" stroke-opacity=".19"/>
+    <circle cx="900" cy="148" r="29" fill="none" stroke="#62cbbb" stroke-opacity=".37"/>
+    <rect x="884" y="132" width="32" height="32" rx="9" fill="#163e43" stroke="#98efdc" stroke-width="1.8"/>
+    <path d="m900 138 10 10-10 10-10-10z" fill="#abf9df"/>
+
+    <style>
+      @media (prefers-reduced-motion: reduce) { .signal { display: none; } }
+    </style>
+    <g class="signal" fill="#c1ffed">
+      <circle r="4" opacity="0">
+        <animateMotion dur="4.6s" path="M753 148h198l52-72h40"/>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.14;.82;1" dur="4.6s"/>
+      </circle>
+      <circle r="3.5" opacity="0">
+        <animateMotion begin="1.15s" dur="3.6s" path="M915 148h36l52 72h40"/>
+        <animate attributeName="opacity" begin="1.15s" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="3.6s"/>
+      </circle>
+    </g>
+
+    <g font-family="'Segoe UI', Arial, sans-serif">
+      <text x="65" y="83" fill="#94edda" font-family="'Courier New', monospace" font-size="20" font-weight="700" letter-spacing="1.5">@hentostc06</text>
+      <text x="61" y="155" fill="#f2fbfa" font-size="72" font-weight="700" letter-spacing="-2.5">Henri Ardianto</text>
+      <text x="65" y="207" fill="#bdced7" font-size="27">IT Support · Network &amp; Server Infrastructure</text>
+    </g>
+  </g>
+  <rect x=".5" y=".5" width="1119" height="295" rx="17.5" fill="none" stroke="#6fc9bb" stroke-opacity=".25"/>
+</svg>
