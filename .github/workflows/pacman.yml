@@ -1,0 +1,44 @@
+name: Generate Pac-Man contribution graph
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/pacman.yml
+  schedule:
+    - cron: "17 21 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: pacman-contribution-graph
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Generate Pac-Man from GitHub contributions
+        uses: abozanona/pacman-contribution-graph@70945878b1118303b37b88060fc7145e1a57d7b1
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          games: pacman
+
+      - name: Check light and dark SVGs
+        run: |
+          test -s dist/pacman-contribution-graph.svg
+          test -s dist/pacman-contribution-graph-dark.svg
+
+      - name: Publish the contribution graphs
+        uses: crazy-max/ghaction-github-pages@df5cc2bfa78282ded844b354faee141f06b41865 # v4.2.0
+        with:
+          target_branch: pacman-output
+          build_dir: dist
+          keep_history: true
+          allow_empty_commit: false
+          commit_message: Update Pac-Man contribution graph
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
