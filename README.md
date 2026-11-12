@@ -20,3 +20,10 @@ Saya bekerja di bidang **IT support, jaringan, dan infrastruktur server**. Fokus
 - **Jaringan** · LAN, VLAN, MikroTik, Ruijie, dan WireGuard
 - **Server** · Linux, Docker, Nginx, Samba, Nextcloud, dan rsync
 - **Pengembangan web** · Laravel, Vue, Next.js, TypeScript, PostgreSQL, dan MySQL
+
+## Aktivitas GitHub
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hentostc06/hentostc06/pacman-output/pacman-contribution-graph-dark.svg">
+  <img alt="Animasi Pac-Man memakan kotak hijau dari kalender kontribusi GitHub hentostc06" src="https://raw.githubusercontent.com/hentostc06/hentostc06/pacman-output/pacman-contribution-graph.svg">
+</picture>
